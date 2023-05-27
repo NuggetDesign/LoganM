@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Document</title>
-    <link rel="stylesheet" href="style/index.scss">
+    <link rel="stylesheet" href="style/index.css">
 </head>
 <body>
     <section class="navigation">
@@ -29,7 +29,108 @@
     </section>
 
     <section class="hero">
+        <div class="left">
+            <h1 class="title">Lorem ipsum dolor sit amet, consectetur</h1>
+            <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.</p>
 
+            <div class="buttons">
+                <div class="btm">
+                    <a href="#"><p>Lorem ipsum</p></a>
+                </div>
+
+                <a href="#"><p>Lorem ipsum dolor</p></a>
+            </div>
+        </div>
     </section>
+
+    <section class="description">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus.<br><br>
+
+        Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. </p>
+    </section>
+
+    <section class="experience">
+        <img id="image" src="images/image1.png">
+
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-header" data-image="images/image2.png">Accordion 1</div>
+                <div class="accordion-content">
+                    Content for Accordion 1
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header" data-image="images/image3.png">Accordion 2</div>
+                <div class="accordion-content">
+                    Content for Accordion 2
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="previous-work">
+        <div class="custom-buttons">
+          <button class="custom-button" id="prev-previous-work">Previous</button>
+          <button class="custom-button" id="next-previous-work">Next</button>
+        </div>
+      
+        <div class="splide previous-work-carousel">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">Slide 1</li>
+              <li class="splide__slide">Slide 2</li>
+              <li class="splide__slide">Slide 3</li>
+              <li class="splide__slide">Slide 4</li>
+            </ul>
+          </div>
+        </div>
+    </section>
+    
+    <section class="review-carousel splide">
+        <div class="custom-buttons">
+            <button class="custom-button" id="review-prev">Previous</button>
+            <button class="custom-button" id="review-next">Next</button>
+        </div>
+
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">Content 1</li>
+            <li class="splide__slide">Content 2</li>
+            <li class="splide__slide">Content 3</li>
+            <li class="splide__slide">Content 4</li>
+            <li class="splide__slide">Content 5</li>
+            <li class="splide__slide">Content 6</li>
+            <li class="splide__slide">Content 7</li>
+            <li class="splide__slide">Content 8</li>
+          </ul>
+        </div>
+    </section>
+
+
+
+    <section class="footer">
+        <footer>
+            <p class="title">Let's Work Together</p>
+
+            <input type="text">
+
+            <div class="bottom">
+                <p class="copyright">2023 © LoganM, All rights reserved.</p>
+
+                <div class="terms">
+                    <p>Terms of Services</p>
+                    <p>Terms of Conditions</p>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index.js"></script>
+    
 </body>
 </html>

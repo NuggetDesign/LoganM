@@ -1,1 +1,121 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --background-black: #101010;
+    --background-black-card: #151515;
+
+    // Font Color
+    --h1-white: #D7D6D3;
+    --text-white: #868481;
+    --accent-color: #FF4434;
+
+    // Font Weight
+    --regular: 400;
+    --medium: 500;
+    --semibold: 600;
+    --bold: 700;
+    --extrabold: 800;
+
+
+
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: var(--h1-white);
+    font-weight: var(--regular);
+    // border: 1px solid white;
+
+    a {text-decoration: none;}
+    ul {list-style: none;}
+}
+
+body {
+    background-color: var(--background-black);
+    color: var(--h1-white);
+
+    img {
+        width: 100%;
+    }
+}
+
+.accordion-item {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  
+    .accordion-header {
+      background-color: #f5f5f5;
+      padding: 10px;
+      cursor: pointer;
+    }
+  
+    .accordion-content {
+      padding: 10px;
+      display: none;
+    }
+  }
+  
+#image {
+    transition: opacity 0.5s ease; /* Add transition effect for smooth opacity change */
+}
+
+$splide-container-position: relative;
+
+.review-carousel .splide__slide {
+  background-color: #f5f5f5;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  padding: 20px;
+}
+
+.review-carousel .custom-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.review-carousel .custom-button {
+  background-color: #ffffff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.previous-work .splide-container {
+  position: $splide-container-position;
+
+  .custom-buttons {
+    position: $splide-container-position;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .custom-button {
+    background-color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
+
+.previous-work .splide__slide {
+  background-color: #f5f5f5;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+  

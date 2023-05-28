@@ -5,6 +5,7 @@
   --h1-white: #D7D6D3;
   --text-white: #8E8E8E;
   --accent-color: #FF4434;
+  --footer-title-mobile: 50px;
   --regular: 400;
   --medium: 500;
   --semibold: 600;
@@ -249,6 +250,63 @@ body .desktop {
 
 .review-carousel .splide__slide .desc {
   color: var(--text-white);
+  margin-top: .5em;
+}
+
+footer {
+  margin: 1em 16px;
+}
+
+footer .title {
+  font-size: var(--footer-title-mobile);
+  font-weight: var(--semibold);
+  width: 300px;
+  line-height: 50px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+footer form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 5em auto 2em;
+  gap: 10px;
+}
+
+footer form input {
+  all: unset;
+  height: 50px;
+  font-weight: var(--medium);
+}
+
+footer form .email-input {
+  border-radius: 100px;
+  border: 1px solid #D7D6D3;
+  padding: 0 1.5em;
+}
+
+footer form .submit-button {
+  background-color: var(--accent-color);
+  padding: 0 2em;
+  border-radius: 100px;
+}
+
+footer .bottom {
+  margin-top: 6em;
+}
+
+footer .bottom .terms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: var(--medium);
   margin-top: .5em;
 }
 /*# sourceMappingURL=index.css.map */

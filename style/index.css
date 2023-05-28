@@ -541,9 +541,9 @@ footer .bottom .terms {
     -ms-grid-columns: 500px auto;
         grid-template-columns: 500px auto;
     gap: 20px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
   }
   .previous-work {
     margin-left: 6em;
@@ -590,6 +590,51 @@ footer .bottom .terms {
         -ms-flex-align: center;
             align-items: center;
     margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .navigation, .container .circle, .hero, .experience, .previous-work, .review-carousel, footer {
+    width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero {
+    -ms-grid-columns: 440px 50%;
+        grid-template-columns: 440px 50%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .hero img {
+    height: 400px;
+  }
+  .description {
+    margin: 8em auto;
+    width: 800px;
+  }
+  .experience {
+    -ms-grid-columns: auto 500px;
+        grid-template-columns: auto 500px;
+    gap: 40px;
+  }
+  #image {
+    height: 440px;
+  }
+  .previous-work {
+    margin: 8em auto;
+    width: 1000px;
+  }
+  .previous-work .previous-work-carousel .splide__track ul li {
+    -ms-grid-columns: auto 300px;
+        grid-template-columns: auto 300px;
+    gap: 40px;
+  }
+  .review-carousel .splide__slide {
+    padding: 5em 4em 4em;
+  }
+  footer form .email-input {
+    width: 400px;
   }
 }
 /*# sourceMappingURL=index.css.map */

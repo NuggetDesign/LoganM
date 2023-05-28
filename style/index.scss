@@ -557,8 +557,10 @@ footer {
     display: grid;
     grid-template-columns: 500px auto;
     gap: 20px;
-    align-items: center;
+    align-items: end;
   }
+
+
 
   .previous-work {
     margin-left: 6em;
@@ -606,6 +608,68 @@ footer {
       }
     }
   }
+}
+
+@media only screen and (min-width: 1440px) {
+
+  .navigation, .container .circle, .hero, .experience, .previous-work, .review-carousel, footer {
+    width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero {
+    grid-template-columns: 440px 50%;
+    justify-content: space-between;
+
+    img {
+      height: 400px;
+    }
+  }
+
+  .description {
+    margin: 8em auto;
+    width: 800px;
+  }
+
+  .experience {
+    grid-template-columns: auto 500px;
+    gap: 40px;
+  }
+
+  #image {
+    height: 440px;
+  }
+
+  .previous-work {
+    margin: 8em auto;
+    width: 1000px;
+
+    .previous-work-carousel {
+      .splide__track ul li {
+        grid-template-columns: auto 300px;
+        gap: 40px;
+      }
+    }
+  }
+
+  .review-carousel .splide__slide {
+    padding: 5em 4em 4em;
+  }
+
+  footer {
+    form {
+      .email-input {
+        width: 400px;
+      }
+    }
+  }
+
+
+
+
+
+
 
 
 

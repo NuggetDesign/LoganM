@@ -50,14 +50,14 @@ body {
     img {
         width: 100%;
     }
-
-    .desktop {
-      display: none;
-    }
 }
 
 .navigation {
   margin: 2em 16px;
+
+  .desktop {
+    display: none;
+  }
 
   .logo {
     font-weight: var(--bold); 
@@ -493,15 +493,119 @@ footer {
       }
     }
   }
+}
 
+@media only screen and (min-width: 1024px) {
 
+  .navigation, .container .circle, .hero, .experience, .previous-work, .review-carousel, footer {
+    margin-left: 3em;
+    margin-right: 3em;
+  }
 
+  .container {
+    display: none;
+  }
 
+  .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
+    .desktop {
+      display: block;
+    }
 
+    .right {
+      display: flex;
+      align-items: center;
+      gap: 30px;
 
+      nav {
+        ul {
+          display: flex;
+          gap: 20px;
+        }
+      }
 
+      .nav-button {
+        p {
+          border: 1px solid #D7D6D3;
+          padding: 1em 2em;
+          border-radius: 6px;
+        }
+      }
+    }
+  }
 
+  .hero {
+    display: grid;
+    grid-template-columns: 500px auto;
+    align-items: center;
+    gap: 20px;
+
+    img {
+      margin-top: 0;
+      height: 340px;
+    }
+  }
+
+  .description {
+    margin: 4em 10em;
+  }
+
+  .experience {
+    display: grid;
+    grid-template-columns: 500px auto;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .previous-work {
+    margin-left: 6em;
+    margin-right: 6em;
+    margin-top: 6em;
+
+    .previous-work-carousel {
+      .splide__track ul li {
+        display: grid;
+        grid-template-columns: 500px auto;
+        gap: 20px;
+
+        img {
+          height: 340px;
+        }
+
+        .slide-content {
+          margin: 1em 0;
+
+          .other {
+            position: absolute;
+            bottom: 1em;
+          }
+        }
+      }
+    }
+  }
+
+  .review-carousel {
+    margin-top: 8em;
+  }
+
+  footer {
+    margin-top: 8em;
+
+    .bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .terms {
+        gap: 20px;
+        align-items: center;
+        margin-top: 0;
+      }
+    }
+  }
 
 
 

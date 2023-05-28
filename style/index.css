@@ -43,12 +43,12 @@ body img {
   width: 100%;
 }
 
-body .desktop {
-  display: none;
-}
-
 .navigation {
   margin: 2em 16px;
+}
+
+.navigation .desktop {
+  display: none;
 }
 
 .navigation .logo {
@@ -473,6 +473,123 @@ footer .bottom .terms {
   }
   footer form .email-input {
     width: 300px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .navigation, .container .circle, .hero, .experience, .previous-work, .review-carousel, footer {
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+  .container {
+    display: none;
+  }
+  .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .navigation .desktop {
+    display: block;
+  }
+  .navigation .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 30px;
+  }
+  .navigation .right nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+  }
+  .navigation .right .nav-button p {
+    border: 1px solid #D7D6D3;
+    padding: 1em 2em;
+    border-radius: 6px;
+  }
+  .hero {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 500px auto;
+        grid-template-columns: 500px auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 20px;
+  }
+  .hero img {
+    margin-top: 0;
+    height: 340px;
+  }
+  .description {
+    margin: 4em 10em;
+  }
+  .experience {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 500px auto;
+        grid-template-columns: 500px auto;
+    gap: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .previous-work {
+    margin-left: 6em;
+    margin-right: 6em;
+    margin-top: 6em;
+  }
+  .previous-work .previous-work-carousel .splide__track ul li {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 500px auto;
+        grid-template-columns: 500px auto;
+    gap: 20px;
+  }
+  .previous-work .previous-work-carousel .splide__track ul li img {
+    height: 340px;
+  }
+  .previous-work .previous-work-carousel .splide__track ul li .slide-content {
+    margin: 1em 0;
+  }
+  .previous-work .previous-work-carousel .splide__track ul li .slide-content .other {
+    position: absolute;
+    bottom: 1em;
+  }
+  .review-carousel {
+    margin-top: 8em;
+  }
+  footer {
+    margin-top: 8em;
+  }
+  footer .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .bottom .terms {
+    gap: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 0;
   }
 }
 /*# sourceMappingURL=index.css.map */

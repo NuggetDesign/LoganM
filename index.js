@@ -23,7 +23,8 @@ function initializeAccordion() {
     var previousWorkCarousel = new Splide('.previous-work-carousel', {
       type: 'loop', // Enable infinite looping
       arrows: false, // Hide default arrows
-      pagination: false // Hide page indicator
+      pagination: false, // Hide page indicator
+      gap: '1em'
     }).mount();
 
     var prevButtonPreviousWork = document.getElementById('prev-previous-work');
@@ -41,16 +42,19 @@ function initializeAccordion() {
       type: 'loop', // Enable infinite looping
       perPage: getPerPage(), // Display different number of slides based on screen size
       arrows: false, // Hide default arrows
-      pagination: false // Hide page indicator
+      pagination: false, // Hide page indicator
+      autoplay: 'play',
+      interval: 5000,
+      gap: '1em'
     }).mount();
 
     function getPerPage() {
       if (window.innerWidth >= 1024) {
-        return 4; // Display 4 slides for large screens (1024px and above)
+        return 3; // Display 4 slides for large screens (1024px and above)
       } else if (window.innerWidth >= 768) {
-        return 3; // Display 3 slides for medium screens (768px and above)
+        return 2; // Display 3 slides for medium screens (768px and above)
       } else {
-        return 2; // Display 2 slides for small screens (below 768px)
+        return 1; // Display 2 slides for small screens (below 768px)
       }
     }
 

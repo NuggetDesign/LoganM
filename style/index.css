@@ -147,6 +147,61 @@ body .desktop {
   margin-top: 2em;
 }
 
+.previous-work {
+  position: relative;
+  margin: 2em 16px;
+}
+
+.previous-work .top .title {
+  font-weight: var(--semibold);
+}
+
+.previous-work .top .custom-buttons {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.previous-work .top .custom-buttons .custom-button {
+  background-color: var(--background-black-card);
+  border: none;
+  padding: 1.7em;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.previous-work .top .custom-buttons .custom-button img {
+  width: 20px;
+  height: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.previous-work .splide__slide {
+  background-color: #f5f5f5;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 24px;
+}
+
 .review-carousel .splide__slide {
   background-color: #f5f5f5;
   height: 200px;
@@ -180,44 +235,5 @@ body .desktop {
   border-radius: 5px;
   cursor: pointer;
   margin: 0 5px;
-}
-
-.previous-work .splide-container {
-  position: relative;
-}
-
-.previous-work .splide-container .custom-buttons {
-  position: relative;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 10px;
-}
-
-.previous-work .splide-container .custom-button {
-  background-color: #ffffff;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.previous-work .splide__slide {
-  background-color: #f5f5f5;
-  height: 200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 24px;
 }
 /*# sourceMappingURL=index.css.map */

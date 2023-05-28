@@ -12,8 +12,10 @@
   --bold: 700;
   --extrabold: 800;
   --logo-mobile: 25px;
+  --title-desktop: 60px;
   --title-mobile: 40px;
   --hero-button-mobile: 14px;
+  --footer-title: 80px;
   --image-border: 16px;
   --accordion-border: 10px;
 }
@@ -505,7 +507,10 @@ footer .bottom .terms {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 30px;
+    gap: 60px;
+  }
+  .navigation .right a {
+    font-weight: var(--medium);
   }
   .navigation .right nav ul {
     display: -webkit-box;
@@ -515,7 +520,7 @@ footer .bottom .terms {
   }
   .navigation .right .nav-button p {
     border: 1px solid #D7D6D3;
-    padding: 1em 2em;
+    padding: 1em 3em;
     border-radius: 6px;
   }
   .hero {
@@ -635,6 +640,68 @@ footer .bottom .terms {
   }
   footer form .email-input {
     width: 400px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .navigation, .container .circle, .hero, .experience, .previous-work, .review-carousel, footer {
+    width: 1700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero {
+    -ms-grid-columns: 700px 50%;
+        grid-template-columns: 700px 50%;
+  }
+  .hero .left .title {
+    font-size: var(--title-desktop);
+    line-height: 80px;
+  }
+  .hero .left .desc {
+    width: 450px;
+  }
+  .hero .left .buttons {
+    margin-top: 6em;
+  }
+  .hero img {
+    height: 550px;
+  }
+  .experience {
+    -ms-grid-columns: auto 560px;
+        grid-template-columns: auto 560px;
+    gap: 20px;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+  }
+  .accordion-item .accordion-header, .accordion-item .accordion-content {
+    padding: 2em 3em;
+  }
+  #image {
+    height: 700px;
+  }
+  .previous-work {
+    margin: 8em auto;
+    width: 1200px;
+  }
+  .previous-work .previous-work-carousel .splide__track ul li {
+    -ms-grid-columns: auto 300px;
+        grid-template-columns: auto 300px;
+    gap: 40px;
+  }
+  .previous-work .previous-work-carousel .splide__track ul li img {
+    height: 550px;
+  }
+  footer {
+    margin-top: 12em;
+  }
+  footer .title {
+    font-size: var(--footer-title);
+    line-height: 80px;
+    width: 500px;
+  }
+  footer .bottom {
+    margin-top: 12em;
   }
 }
 /*# sourceMappingURL=index.css.map */

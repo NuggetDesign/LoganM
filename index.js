@@ -49,8 +49,10 @@ function initializeAccordion() {
     }).mount();
 
     function getPerPage() {
-      if (window.innerWidth >= 1024) {
-        return 3; // Display 4 slides for large screens (1024px and above)
+      if (window.innerWidth >= 1920) {
+        return 4; // Display 4 slides for large screens (1024px and above)
+      } else if (window.innerWidth >= 1024) {
+        return 3; // Display 3 slides for medium screens (768px and above)
       } else if (window.innerWidth >= 768) {
         return 2; // Display 3 slides for medium screens (768px and above)
       } else {

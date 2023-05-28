@@ -19,8 +19,10 @@
 
     // Font Size
     --logo-mobile: 25px;
+    --title-desktop: 60px;
     --title-mobile: 40px;
     --hero-button-mobile: 14px;
+    --footer-title: 80px;
 
     // Buttons & Images
     --image-border: 16px;
@@ -518,7 +520,11 @@ footer {
     .right {
       display: flex;
       align-items: center;
-      gap: 30px;
+      gap: 60px;
+
+      a {
+        font-weight: var(--medium);
+      }
 
       nav {
         ul {
@@ -530,7 +536,7 @@ footer {
       .nav-button {
         p {
           border: 1px solid #D7D6D3;
-          padding: 1em 2em;
+          padding: 1em 3em;
           border-radius: 6px;
         }
       }
@@ -664,14 +670,83 @@ footer {
       }
     }
   }
+}
 
+@media only screen and (min-width: 1920px) {
 
+  .navigation, .container .circle, .hero, .experience, .previous-work, .review-carousel, footer {
+    width: 1700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
+  .hero {
+    grid-template-columns: 700px 50%;
 
+    .left {
+      .title {
+        font-size: var(--title-desktop);
+        line-height: 80px;
+      }
 
+      .desc {
+        width: 450px;
+      }
 
+      .buttons {
+        margin-top: 6em;
+      }
+    }
 
+    img {
+      height: 550px;
+    }
+  }
 
+  .experience {
+    grid-template-columns: auto 560px;
+    gap: 20px;
+    align-items: end;
+  }
 
+  .accordion-item {
+    .accordion-header, .accordion-content {
+      padding: 2em 3em;
+    }
+  }
+
+  #image {
+    height: 700px;
+  }
+
+  .previous-work {
+    margin: 8em auto;
+    width: 1200px;
+
+    .previous-work-carousel {
+      .splide__track ul li {
+        grid-template-columns: auto 300px;
+        gap: 40px;
+
+        img {
+          height: 550px;
+        }
+      }
+    }
+  }
+
+  footer {
+    margin-top: 12em;
+
+    .title {
+      font-size: var(--footer-title);
+      line-height: 80px;
+      width: 500px;
+    }
+    
+    .bottom {
+      margin-top: 12em;
+    }
+  }
 
 }

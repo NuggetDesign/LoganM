@@ -658,8 +658,11 @@ footer .bottom .terms {
   .review-carousel .splide__slide {
     padding: 5em 4em 4em;
   }
-  footer form .email-input {
-    width: 400px;
+  footer .contact {
+    width: 700px;
+  }
+  footer .contact .texts .title {
+    font-size: 60px;
   }
 }
 
@@ -714,11 +717,6 @@ footer .bottom .terms {
   }
   footer {
     margin-top: 12em;
-  }
-  footer .title {
-    font-size: var(--footer-title);
-    line-height: 80px;
-    width: 500px;
   }
   footer .bottom {
     margin-top: 12em;

@@ -679,9 +679,13 @@ footer {
   }
 
   footer {
-    form {
-      .email-input {
-        width: 400px;
+    .contact {
+      width: 700px;
+
+      .texts {
+        .title {
+          font-size: 60px;
+        }
       }
     }
   }
@@ -752,12 +756,6 @@ footer {
 
   footer {
     margin-top: 12em;
-
-    .title {
-      font-size: var(--footer-title);
-      line-height: 80px;
-      width: 500px;
-    }
     
     .bottom {
       margin-top: 12em;

@@ -406,6 +406,7 @@ footer {
   .contact {
     background-color: var(--accent-color);
     border-radius: var(--image-border);
+    padding-bottom: 3em;
     
     .image {
       display: flex;
@@ -425,7 +426,6 @@ footer {
       .title {
         font-size: 50px;
         font-weight: var(--bold);
-        margin-bottom: 1em;
       }
 
       .subtext {
@@ -597,6 +597,25 @@ footer {
 
   footer {
     margin-top: 8em;
+
+    .contact {
+      width: 500px;
+      margin: 0 auto;
+      padding: 4em;
+
+      a {
+        display: flex;  
+        align-items: center;
+        justify-content: center;
+      }
+
+      .image {
+        img {
+          margin: 0;
+          margin-right: 2em;
+        }
+      }
+    }
 
     .bottom {
       display: flex;

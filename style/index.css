@@ -398,6 +398,7 @@ footer {
 footer .contact {
   background-color: var(--accent-color);
   border-radius: var(--image-border);
+  padding-bottom: 3em;
 }
 
 footer .contact .image {
@@ -426,7 +427,6 @@ footer .contact .texts {
 footer .contact .texts .title {
   font-size: 50px;
   font-weight: var(--bold);
-  margin-bottom: 1em;
 }
 
 footer .contact .texts .subtext {
@@ -577,6 +577,26 @@ footer .bottom .terms {
   }
   footer {
     margin-top: 8em;
+  }
+  footer .contact {
+    width: 500px;
+    margin: 0 auto;
+    padding: 4em;
+  }
+  footer .contact a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .contact .image img {
+    margin: 0;
+    margin-right: 2em;
   }
   footer .bottom {
     display: -webkit-box;

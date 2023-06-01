@@ -7,7 +7,7 @@
     // Font Color
     --h1-white: #D7D6D3;
     --text-white: #8E8E8E;
-    --accent-color: #FF4434;
+    --accent-color: #D90429;
     --footer-title-mobile: 50px;
 
     // Font Weight
@@ -403,39 +403,35 @@ $splide-container-position: relative;
 footer {
   margin: 1em 16px;
 
-  .title {
-    font-size: var(--footer-title-mobile);
-    font-weight: var(--semibold);
-    width: 300px;
-    line-height: 50px;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  form {
-    display: flex;
-    justify-content: center;
-    margin: 5em auto 2em;
-    gap: 10px;
-
-    input {
-      all: unset;
-      height: 50px;
-      font-weight: var(--medium);
-    }
-
-    .email-input {
-      border-radius: 100px;
-      border: 1px solid #D7D6D3;
-      padding: 0 1.5em;
-    }
-
-    .submit-button {
-      background-color: var(--accent-color);
-      padding: 0 2em;
-      border-radius: 100px;
-    }
+  .contact {
+    background-color: var(--accent-color);
+    border-radius: var(--image-border);
     
+    .image {
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 140px;
+        margin: 4em 0 2em;
+      }
+    }
+
+    .texts {
+      display: grid;
+      justify-content: center;
+      line-height: 40px;
+
+      .title {
+        font-size: 50px;
+        font-weight: var(--bold);
+        margin-bottom: 1em;
+      }
+
+      .subtext {
+        font-weight: var(--semibold);
+      }
+    }
   }
 
   .bottom {

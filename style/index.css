@@ -4,7 +4,7 @@
   --background-black-card: #151515;
   --h1-white: #D7D6D3;
   --text-white: #8E8E8E;
-  --accent-color: #FF4434;
+  --accent-color: #D90429;
   --footer-title-mobile: 50px;
   --regular: 400;
   --medium: 500;
@@ -395,42 +395,42 @@ footer {
   margin: 1em 16px;
 }
 
-footer .title {
-  font-size: var(--footer-title-mobile);
-  font-weight: var(--semibold);
-  width: 300px;
-  line-height: 50px;
-  margin: 0 auto;
-  text-align: center;
+footer .contact {
+  background-color: var(--accent-color);
+  border-radius: var(--image-border);
 }
 
-footer form {
+footer .contact .image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 5em auto 2em;
-  gap: 10px;
 }
 
-footer form input {
-  all: unset;
-  height: 50px;
-  font-weight: var(--medium);
+footer .contact .image img {
+  width: 140px;
+  margin: 4em 0 2em;
 }
 
-footer form .email-input {
-  border-radius: 100px;
-  border: 1px solid #D7D6D3;
-  padding: 0 1.5em;
+footer .contact .texts {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 40px;
 }
 
-footer form .submit-button {
-  background-color: var(--accent-color);
-  padding: 0 2em;
-  border-radius: 100px;
+footer .contact .texts .title {
+  font-size: 50px;
+  font-weight: var(--bold);
+  margin-bottom: 1em;
+}
+
+footer .contact .texts .subtext {
+  font-weight: var(--semibold);
 }
 
 footer .bottom {

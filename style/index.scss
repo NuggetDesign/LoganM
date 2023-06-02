@@ -227,6 +227,12 @@ body {
         padding: 1em 2em;
         border-radius: 6px;
       }
+
+      .outlined-btm {
+        border: 1px solid var(--text-white);
+        padding: 1em 2em;
+        border-radius: 6px;
+      }
     }
   }
 
@@ -726,6 +732,7 @@ footer {
     grid-template-columns: auto 560px;
     gap: 20px;
     align-items: end;
+    margin-top: 10em;
   }
 
   .accordion-item {

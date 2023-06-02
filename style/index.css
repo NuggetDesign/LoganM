@@ -519,7 +519,7 @@ footer .bottom .terms {
     gap: 20px;
   }
   .navigation .right .nav-button p {
-    border: 1px solid #D7D6D3;
+    background-color: var(--accent-color);
     padding: 1em 3em;
     border-radius: 6px;
   }

@@ -372,9 +372,9 @@ $splide-container-position: relative;
   padding: 3em;
 
   img {
-    width: 30px;
+    width: 15px;
     margin-top: 5em;
-    padding: 1em;
+    padding: .7em;
     border-radius: 100%;
     background-color: var(--background-black);
   }
@@ -601,6 +601,14 @@ footer {
     margin-top: 8em;
   }
 
+  .review-carousel .splide__slide {
+  
+    img {
+      width: 15px;
+      padding: .5em;
+    }
+  }
+
   footer {
     margin-top: 8em;
 
@@ -682,6 +690,11 @@ footer {
 
   .review-carousel .splide__slide {
     padding: 5em 4em 4em;
+
+    img {
+      width: 20px;
+      padding: 1em;
+    }
   }
 
   footer {
